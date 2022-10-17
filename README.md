@@ -12,6 +12,7 @@ This tool is made for Linux. The code can be modified to work on other operating
 ## Installation
 
 1. `git clone https://github.com/cranksh/Ghost-Toolkit`
+2. `bash install.sh`
 2. `cd Ghost-Toolkit`
 3. `python ghost.py`
 
