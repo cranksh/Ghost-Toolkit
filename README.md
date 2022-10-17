@@ -1,4 +1,4 @@
-# Ghost OSINT Tool-Kit
+# Ghost OSINT Toolkit
 ---
 
 **This project was made with Python.**
