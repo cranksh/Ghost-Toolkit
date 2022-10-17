@@ -46,7 +46,7 @@ B = f"{w}\033[1;44m"
 
 
 mail_printate = []
-configs = json.loads(open("configs/config.json", "r").read())
+configs = json.loads(open("config.json", "r").read())
 home = os.getenv("HOME")
 cookifile = f"{home}/.cookies"
 space = "         "
