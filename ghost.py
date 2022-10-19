@@ -244,7 +244,7 @@ def phoneinfo():
     api_key = configs['veriphone-api-key']
     if api_key == "":
         api_key = input(f"{space}{w}{b}>{w} enter your api key (https://veriphone.io) :{b} ")
-        with open("configs/config.json", "w") as configs_file:
+        with open("config.json", "w") as configs_file:
             configs["veriphone-api-key"] = api_key
             configs_file.write(json.dumps(configs))
     if not no: menu()
@@ -357,7 +357,7 @@ def mailfinder():
         api = configs["real-email-api-key"]
         if api == "":
             api = input(f"{space}{w}{b}>{w} enter your api key (https://isitarealemail.com) :{b} ")
-            with open("configs/config.json", "w") as configs_file:
+            with open("config.json", "w") as configs_file:
                 configs["real-email-api-key"] = api
                 configs_file.write(json.dumps(configs))
         print(w+lines)
@@ -770,7 +770,7 @@ def settings():
     
     new_value = input(f"{space}{lr}>{r} Insert the new value of {configs_num[option]} :{lr} ")
     configs[configs_num[option]] = new_value
-    with open("configs/config.json", "w") as configs_file:
+    with open("config.json", "w") as configs_file:
         configs_file.write(json.dumps(configs))
 
 def temp_mail_gen(): 
